@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+
+    <style>
+             body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+        }
+
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover > ul {
+            display: block;
+        }
+
+        li ul li {
+            display: block;
+            width: 120px; /* Adjust the width as needed */
+        }
+
+        li ul ul {
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">Characters</a>
+            <ul>
+                <li>
+                    <a href="#">Friend</a>
+                    <ul>
+                        <li><a href="#">Bruce Wayne</a></li>
+                        <li><a href="#">Alfred Pennyworth</a></li>
+                        <li><a href="#">James Gordon</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Foe</a>
+                    <ul>
+                        <li><a href="#">Joe Chill</a></li>
+                        <li><a href="#">Joker</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
